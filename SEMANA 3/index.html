@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Web</h1>
+        <p>Mi página personal creada con HTML y CSS</p>
+    </header>
+    
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a My Web</h2>
+            <p>Esta es <strong>mi página web personal</strong> que muestra <em>todos los elementos</em> requeridos en HTML.</p>
+            
+            <h3>Sobre esta página</h3>
+            <p>Contiene ejemplos de <strong>HTML básico</strong> y <em>CSS para estilos</em>.</p>
+        </section>
+        
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            
+            <h3>Imagen</h3>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w-500" 
+                 alt="Código de programación en pantalla" width="300">
+            
+            <h3>Video</h3>
+            <video width="300" controls>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </section>
+        
+        <section id="listas">
+            <h2>Listas</h2>
+            
+            <h3>Mis Pasatiempos</h3>
+            <ol>
+                <li>Programación web</li>
+                <li>Diseño gráfico</li>
+                <li>Fotografía</li>
+            </ol>
+            
+            <h3>Tecnologías que uso</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        
+        <section id="enlace">
+            <h2>Recursos Útiles</h2>
+            <p>Visita <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> para aprender desarrollo web.</p>
+        </section>
+        
+        <section id="tabla">
+            <h2>Tabla de Ejemplo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lenguaje</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Básico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required placeholder="Tu nombre">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="tu@email.com">
+                
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 - My Web</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
