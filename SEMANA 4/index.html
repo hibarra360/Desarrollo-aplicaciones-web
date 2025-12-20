@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Moderno - Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MiProyecto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5" id="servicios">
+        <h1 class="text-center mb-5">Nuestros Servicios</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 custom-card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top img-fluid" alt="Servicio 1">
+                    <div class="card-body">
+                        <h3 class="card-title">Innovación</h3>
+                        <p class="card-text">Diseños modernos utilizando las últimas tendencias de CSS3 y animaciones fluidas.</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#info1">Leer más</button>
+                        <div class="collapse mt-2" id="info1">
+                            <div class="card card-body">Detalles avanzados sobre nuestra metodología de innovación.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 custom-card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top img-fluid" alt="Servicio 2">
+                    <div class="card-body">
+                        <h3>Responsive</h3>
+                        <p>Adaptabilidad total en cualquier dispositivo gracias al potente sistema de Grid de Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 custom-card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top img-fluid" alt="Servicio 3">
+                    <div class="card-body">
+                        <h3>Optimización</h3>
+                        <p>Código limpio y eficiente para garantizar la mejor velocidad de carga y experiencia de usuario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-light py-5" id="contacto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">Contáctanos</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Comentarios</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-light py-4 border-top">
+        <p>&copy; 2025 Mi Sitio Bootstrap. Todos los derechos reservados.</p>
+        <a href="#" class="text-decoration-none mx-2">LinkedIn</a>
+        <a href="#" class="text-decoration-none mx-2">GitHub</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
