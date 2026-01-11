@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.controls {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input[type="url"] {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-delete {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Galería con Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantiene la proporción sin deformar */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 4px solid transparent;
+}
+
+/* Estilo para la imagen seleccionada */
+.gallery-grid img.selected {
+    border-color: #2196F3;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.7);
+    transform: scale(1.05);
+}
